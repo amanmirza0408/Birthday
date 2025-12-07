@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Wish</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+    <div id="particles-js"></div>
+    <div class="floating-hearts" id="floatingHearts"></div>
+    <div class="petals" id="petalsContainer"></div>
+    
+    
+    <div class="container">
+        <div class="progress-bar">
+            <div class="progress" id="progressBar"></div>
+        </div>
+
+        <!-- Step 1 -->
+<div class="step" id="step1">
+    <h1>Happy Birthday, Dear!</h1>
+    <p>I've created something magical for you.</p>
+    <img src="https://png.pngtree.com/png-vector/20250422/ourmid/pngtree-cute-girl-holding-birthday-cake-smiling-cheerfully-png-image_16067658.png" style="height: 200px;width: 200px;" alt="">
+    <button class="btn" onclick="nextStep()">Open Your Gift</button>
+</div>
+
+<!-- Step 2 -->
+<div class="step" id="step2">
+    <h2>Let's Make Your day</h2>
+    <p>Pleas enter your name...</p>
+    <input type="text" class="name-input" id="nameInput" placeholder="Enter your name">
+    <button class="btn" onclick="saveName()">Continue</button>
+</div>
+
+<!-- OLD Step 4 → NEW Step 3 -->
+<div class="step" id="step3">
+    <h2>My Special Message For You</h2>
+
+    <div class="photo-frame">
+        <img src="https://medias.artmajeur.com/standard/17262319_a-cutel-european-girl-full-bodycartoon-style-illustration-drawn-with-posca-markers-pretty-face-586679414-1.jpg?v=1738402496" alt="Beautiful You">
+    </div>
+
+    <div id="typedMessage" class="message-box">
+        <p class="typing-effect" id="typingText"></p>
+    </div>
+
+    <button class="btn" onclick="nextStep()">See Your Surprise</button>
+</div>
+
+<!-- OLD Step 6 → NEW Step 4 -->
+<div class="step" id="step4">
+    <h1>🎉 Happy Birthday, <span id="finalName">Prachi</span>! 🎂</h1>
+
+    <p>✨ May your day be filled with lots of joy, laughter, and all the positivity you truly deserve. ✨</p>
+    <p>🌟 You make the world a little brighter just by being in it, and I'm really glad to know you. 🌌</p>
+    <p>⏳ Wishing you wonderful moments ahead, and I hope your birthday brings you everything you’ve been hoping for! 😊</p>
+    <p>💌 Best wishes today and always — stay happy, stay blessed! 💫</p>
+
+    <div class="signature">Yours truly</div>
+</div>
+
+        
+    </div>
+  <script src="script.js"></script>
+</body>
+</html>
